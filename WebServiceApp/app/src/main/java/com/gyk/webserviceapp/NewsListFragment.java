@@ -95,7 +95,7 @@ public class NewsListFragment extends Fragment {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                Intent intent = new Intent(getActivity(),WebViewAcitivity.class);
+                Intent intent = new Intent(getActivity(),WebViewActivity.class);
                 intent.putExtra("url",newsList.get(i).getUrl());
                 intent.putExtra("title",newsList.get(i).getTitle());
                 startActivity(intent);
